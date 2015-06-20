@@ -1,0 +1,93 @@
+.faqs-accordian-sec {
+    background-color: #ffffff;
+
+    .faqs-accordian-section 
+    {
+        border: 1px solid #dddddd;
+        margin: 20px 0;
+
+        .faqs-header {
+            background-color: #f2f2f2;
+            border-bottom: 1px solid #dddddd;
+            cursor: pointer;
+            padding: 1px 10px;
+
+            .faq-arrow {
+                width: 100%;
+                padding-right: 20px;
+                height: 100%;
+                background-repeat: no-repeat;
+            }
+
+            .faq-arrow-right {
+                background-image: url('../img/arrow-right.png');
+            }
+
+            .faq-arrow-down {
+                background-image: url('../img/arrow-down.png');
+            }
+
+            h4 {
+                font-family: roboto;
+                font-size: 16px;
+                color: #666666;
+                text-align: left;
+            }
+
+            &>h3 {
+                margin: 0;
+                font-size: 1.1em;
+            }
+        }
+
+        .active {
+            display: block !important;
+        }
+
+        .faqs-content {            
+            display: none;
+            padding: 20px 10px;
+            text-align: left;
+
+            p {
+                font-size: 1rem;
+                line-height: 1.8em;
+            }
+        }
+
+        .faq-strip {
+            margin: 20px 0 30px;
+            width: 100%;
+        }
+    }
+}
+
+.faqs-faq-strip {
+    margin: 20px 0 30px;
+    width: 100%;
+
+    ul {
+        display: table;
+        margin: auto;
+        list-style: none;
+        padding: 0;
+
+        li {
+            float: left;
+            margin: 0 30px;
+
+            a {
+                background-color: hsla(0, 0%, 55%, 1);
+                border-radius: 4px;
+                color: #ffffff;
+                padding: 6px 24px;
+                transition-duration: 500ms;
+
+                &:hover {
+                    color: hsla(2, 73%, 55%, 1);
+                    transition-duration: 500ms;
+                }
+            }
+        }
+    }
+}
