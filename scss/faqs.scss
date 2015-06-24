@@ -1,0 +1,29 @@
+@import 'think201-wp';
+
+
+#faqs-add-field
+{
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.faqs-fields-set input 
+{
+    margin: 5px 0;    
+}
+
+.faqs-inputs
+{
+    position: relative;
+}
+
+.faqs-remove-field
+{
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    color: #ff0010;
+    font-size: 18px;
+    z-index: 99;
+}
