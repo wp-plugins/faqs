@@ -1,13 +1,13 @@
-<div class="wrap">
+<div class="wrap t201plugin">
    <h2>
-      Add New Faqs
+      Add New FAQ
       <a href="<?php print admin_url('admin.php?page=faqs-all-faqs'); ?>" class="add-new-h2">Back</a>
    </h2>
    
-   <div id="message" class="updated below-h2 faqs-msg faqs_success_msg">
+   <div id="message" class="updated below-h2 think201-wp-msg think201-wp-msg-success">
       <p>Faqs has been added</p>
    </div>
-   <div id="message" class="error below-h2 faqs-msg faqs_error_msg">
+   <div id="message" class="error below-h2 think201-wp-msg think201-wp-msg-error">
       <p>Faqs has been not added</p>
    </div>
    <div class="tbox">
@@ -24,12 +24,12 @@
                      <label for="name">Name:</label>
                   </td>
                   <td>
-                     <input type="text" id="name" name="name" placeholder="Faqs Name" class="regular-text" data-validations="required">
+                     <input type="text" id="name" name="name" placeholder="FAQ's Name" class="regular-text" data-validations="required">
                   </td>
                </tr>
             </table>
             <p class="submit">       
-               <button onClick="FAQSForm.post('#faqs_add_form', false)" class="button button-primary" type="button">Add Faqs</button>
+               <button onClick="Think201WP.post('#faqs_add_form', false)" class="button button-primary" type="button">Add FAQ</button>
             </p>
          </form>
       </div>

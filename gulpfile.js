@@ -6,6 +6,12 @@ var uglify  = require('gulp-uglifyjs');
 var cssDir  = 'scss';
 var jsDir   = 'js';
 
+var jsList = 
+[
+  'js/think201-wp.js',
+  'js/faqs-admin.js'
+];
+
 gulp.task('watch', function () 
 {
 	gulp.watch(cssDir + '/**/*.scss', ['css']);
@@ -21,7 +27,7 @@ gulp.task('css', function ()
 
 gulp.task('js', function () 
 {
-    gulp.src('js/faqs-admin.js')
+    gulp.src(jsList)
     .pipe(uglify('faqs-admin.js'))
     .pipe(gulp.dest('./assets/js'));
 });

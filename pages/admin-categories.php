@@ -1,10 +1,10 @@
-<div class="wrap">
+<div class="wrap t201plugin">
     <h2>FAQs Categories</h2>
 
-    <div id="message" class="updated below-h2 faqs-msg faqs_success_msg">
+    <div id="message" class="updated below-h2 think201-wp-msg think201-wp-msg-success">
         <p>Category Added</p>
     </div>
-    <div id="message" class="error below-h2 faqs-msg faqs_error_msg">
+    <div id="message" class="error below-h2 think201-wp-msg think201-wp-msg-error">
         <p>Issues adding Category.</p>
     </div>
     
@@ -29,13 +29,13 @@
 
                 </table>
                 <p class="submit">      
-                    <button onClick="FAQSForm.post('#faqs-add-category')" class="button button-primary" type="button">Add Category</button>
+                    <button onClick="Think201WP.post('#faqs-add-category')" class="button button-primary" type="button">Add Category</button>
                 </p>
             </form>
 
         </div>
         <div class="tbox-footer">
-            Categories helps you in organizing clients. Add as many categories you want from here.
+            Categories helps you in organizing FAQS. Add as many categories you want from here. 
         </div>
     </div>
 </div>

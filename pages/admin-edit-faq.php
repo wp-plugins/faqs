@@ -25,16 +25,16 @@
 
 ?>
 
-<div class="wrap">
+<div class="wrap t201plugin">
    <h2>
       Update
       <a href="<?php print admin_url('admin.php?page=faqs-all-faqs'); ?>" class="add-new-h2">Back</a>
    </h2>
    
-   <div id="message" class="updated below-h2 faqs-msg faqs_success_msg">
+   <div id="message" class="updated below-h2 think201-wp-msg think201-wp-msg-success">
       <p>Faqs has been updated</p>
    </div>
-   <div id="message" class="error below-h2 faqs-msg faqs_error_msg">
+   <div id="message" class="error below-h2 think201-wp-msg think201-wp-msg-error">
       <p>Faqs has been not updated</p>
    </div>
    <div class="tbox">
@@ -59,7 +59,7 @@
             </table>            
             </table>
             <p class="submit">       
-              <button onClick="FAQSForm.post('#faqs_add_form', true)" class="button button-primary" type="button">Update Faqs</button>
+              <button onClick="Think201WP.post('#faqs_add_form', true)" class="button button-primary" type="button">Update Faqs</button>
             </p>
           </form>
       </div>

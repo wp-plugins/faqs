@@ -19,11 +19,13 @@
 
    $wp_list_table = new faqs\FAQsQuestionsListTable($faqsid);
 
+   // get faqs details
+   $FAQ = faqs\FAQsData::getFaqsDetail($faqsid);
 ?>
-<div class="wrap">
+<div class="wrap t201plugin">
     <h2>
-      FAQs        
-      <a href="<?php print admin_url('admin.php?page=faqs-add-question&faqsid='. $faqsid); ?>" class="button-primary">Add Question</a>
+      <?php echo $FAQ->name; ?> | FAQ 
+      <a href="<?php print admin_url('admin.php?page=faqs-add-question&faqsid='. $faqsid); ?>" class="add-new-h2">Add Question</a>
     </h2>   
 <?php
 $wp_list_table->display();

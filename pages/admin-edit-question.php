@@ -20,15 +20,15 @@
    // Get all categories
    $Categories = faqs\FAQsData::getFaqsCategory(); 
 ?>
-<div class="wrap">
+<div class="wrap t201plugin">
    <h2>      
       <a href="<?php print admin_url('admin.php?page=faqs-view-faqs&faqsid='.$faqsid); ?>" class="add-new-h2">Back</a>
    </h2>
    
-   <div id="message" class="updated below-h2 faqs-msg faqs_success_msg">
+   <div id="message" class="updated below-h2 think201-wp-msg think201-wp-msg-success">
       <p>Question has been updated</p>
    </div>
-   <div id="message" class="error below-h2 faqs-msg faqs_error_msg">
+   <div id="message" class="error below-h2 think201-wp-msg think201-wp-msg-error">
       <p>Question has been not updated</p>
    </div>
    <div class="tbox">
@@ -96,7 +96,7 @@
                </tr>
             </table>
             <p class="submit">       
-               <button onClick="FAQSForm.post('#faqs_add_question_form', false)" class="button button-primary" type="button">Update Question</button>
+               <button onClick="Think201WP.post('#faqs_add_question_form', false)" class="button button-primary" type="button">Update Question</button>
             </p>
          </form>
       </div>

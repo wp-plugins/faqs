@@ -92,7 +92,7 @@ class FaqsListTable extends \WP_List_Table
         $columns = array(
             'id'         => __( 'ID' ),
             'name' 			 => __( 'Name' ),
-            'icon'       => __( 'Icon' ),
+            //'icon'       => __( 'Icon' ),
             'function'   => __( 'Function' ),
             'edit'   => __( 'Edit' )
         );
@@ -224,7 +224,7 @@ class FaqsListTable extends \WP_List_Table
             $item->name = '<a href="'.admin_url('admin.php?page=faqs-view-faqs&faqsid='.$item->id).'">'.$item->name.'</a>';
 
             $item->function = ' if(function_exists("faqs_getAll")) { faqs_getAll('. $item->id .', array("accordion" => true)); } ';
-            $item->icon = '<img alt="icon" src="'.$item->icon.'" class="icon-icon">';
+            //$item->icon = '<img alt="icon" src="'.$item->icon.'" class="icon-icon">';
 
             $item->edit = '<a href="'.admin_url('admin.php?page=faqs-edit-faq&faqsid='.$item->id).'">Edit</a>';
 

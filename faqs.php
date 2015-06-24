@@ -4,7 +4,7 @@ Plugin Name: FAQs
 Plugin URI: http://labs.think201.com/plugins/faqs
 Description: FAQs (faqs) helps you create FAQs section for your website
 Author: Think201
-Version: 1.0
+Version: 1.0.1
 Author URI: http://www.think201.com
 License: GPL v1
 
@@ -50,7 +50,7 @@ if ( !defined( 'FAQS_BASENAME' ) )
 define( 'FAQS_BASENAME', plugin_basename( __FILE__ ) );
 
 if ( !defined( 'FAQS_VERSION' ) )
-define('FAQS_VERSION', '1.0' );
+define('FAQS_VERSION', '1.0.1' );
 
 if ( !defined( 'FAQS_PLUGIN_DIR' ) )
 define('FAQS_PLUGIN_DIR', dirname(__FILE__) );

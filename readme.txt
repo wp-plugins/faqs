@@ -1,11 +1,11 @@
 === FAQs ===
-Contributors: think201, vivekpandey
+Contributors: think201, vivekpandey, anuragrath
 Tags: clients, list, add, featured, print
 Requires at least: 3.5.2
 Donate link: http://www.think201.com/
 Tested up to: 4.2.2
-Stable tag: 1.0
-Version: 1.0
+Stable tag: 1.0.1
+Version: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -21,13 +21,14 @@ FAQs provide you an easiest way to add & retrieve Frequently Asked Questions (FA
 - Create FAQ Categories
 - Also, you may choose the UI style you want to display FAQ on your site
 
-* Like the plugin or want features? Tweet to us @think201
+* Like the plugin or want features? Tweet to us [@think201](https://twitter.com/think201)
+* Also you can read more about the plugin & its development at [Think201 Labs](http://labs.think201.com/plugins/faqs/)
 
 = Plugin Support =
 
-Dedicated Support: talk to us on Twitter @think201
+Dedicated Support: talk to us on Twitter [@think201](https://twitter.com/think201)
 
-To raise issues or if you have a question for us, post to the support forum here https://wordpress.org/support/plugin/clients and we are happy to help.
+To raise issues or if you have a question for us, post to the support forum here https://wordpress.org/support/plugin/faqs and we are happy to help.
 
 
 = Requirements =
@@ -43,7 +44,7 @@ To raise issues or if you have a question for us, post to the support forum here
 2. Upload the 'faqs.zip' file from the Plugins->Add New page in the WordPress administration panel.
 3. Activate the plugin through the 'Plugins' menu in WordPress.
 
-= Clients Work flow Explained =
+= Work flow Explained =
 
 Once FAQs plug-in is installed and activated, you can see FAQs on the sidebar menu section.  
 
@@ -70,3 +71,7 @@ To be updated soon
 
 = 1.0 =
 - First commit to the WP repository.
+
+= 1.0.1 =
+- Minor issues fixing
+- Links & content added.

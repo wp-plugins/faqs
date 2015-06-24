@@ -1,5 +1,8 @@
-<div class="wrap">
-	<h2>Dashboard - FAQs</h2>
+<div class="wrap t201plugin">
+	<h2>
+		Dashboard
+		<a href="<?php print admin_url('admin.php?page=faqs-all-faqs'); ?>" class="add-new-h2">All FAQs</a>
+	</h2>
 	
 	<div class="tbox">
 		<div class="tbox-heading">

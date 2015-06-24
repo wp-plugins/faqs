@@ -1,34 +1,38 @@
 <?php
-   $faqsid = null;
+$faqsid = null;
 
-   if(isset($_GET['faqsid']))
+if(isset($_GET['faqsid']))
+{
+   $faqsid = $_GET['faqsid'];
+}
+else
+{
+   if(function_exists('faqsRedirectTo'))
    {
-      $faqsid = $_GET['faqsid'];
+      faqs\faqsRedirectTo('admin.php?page=faqs-all-faqs');
    }
    else
    {
-      if(function_exists('faqsRedirectTo'))
-      {
-         faqs\faqsRedirectTo('admin.php?page=faqs-all-faqs');
-      }
-      else
-      {
-         die('Do not have sufficient permission to access page.');
-      }
+      die('Do not have sufficient permission to access page.');
    }
+}
 
-   // Get all categories
-   $Categories = faqs\FAQsData::getFaqsCategory(); 
+// Get all categories
+$Categories = faqs\FAQsData::getFaqsCategory(); 
+
+// get faqs details
+$FAQ = faqs\FAQsData::getFaqsDetail($faqsid);
 ?>
-<div class="wrap">
-   <h2>      
+<div class="wrap t201plugin">
+   <h2>
+      <?php echo $FAQ->name; ?> | FAQ       
       <a href="<?php print admin_url('admin.php?page=faqs-view-faqs&faqsid='.$faqsid); ?>" class="add-new-h2">Back</a>
    </h2>
-   
-   <div id="message" class="updated below-h2 faqs-msg faqs_success_msg">
+
+   <div id="message" class="updated below-h2 think201-wp-msg think201-wp-msg-success">
       <p>Question has been added</p>
    </div>
-   <div id="message" class="error below-h2 faqs-msg faqs_error_msg">
+   <div id="message" class="error below-h2 think201-wp-msg think201-wp-msg-error">
       <p>Question has been not added</p>
    </div>
    <div class="tbox">
@@ -67,13 +71,13 @@
                         <?php
                         foreach($Categories as $category)
                         {
-                        ?>
+                           ?>
                            <option value="<?php echo $category->id; ?>"><?php echo $category->cat_name; ?></option>
-                        <?php
+                           <?php
                         }
                         ?>
                      </select>                     
-                     <i>Note: Create new category from <a href="<?php print admin_url('admin.php?page=faqs-create-category'); ?>">here</a></i>
+                     <i>Note: Create new category from <a href="<?php print admin_url('admin.php?page=faqs-categories'); ?>">here</a></i>
                   </td>
                </tr>
                <tr valign="top">
@@ -86,13 +90,13 @@
                </tr>
             </table>
             <p class="submit">       
-               <button onClick="FAQSForm.post('#faqs_add_question_form', false)" class="button button-primary" type="button">Add Question</button>
+               <button onClick="Think201WP.post('#faqs_add_question_form', false)" class="button button-primary" type="button">Add Question</button>
             </p>
          </form>
       </div>
 
       <div class="tbox-footer">
-        Add question. Make sure your cross check the details provided.
+         Add question. Make sure your cross check the details provided.
       </div>
    </div>
 </div>

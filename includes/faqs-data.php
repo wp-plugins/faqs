@@ -36,7 +36,7 @@ class FAQsData
 		$table_prefix = $wpdb->prefix;
 		$faqs_categories = $table_prefix.'faqs_categories';	
 		
-		$QueryforData = $wpdb->prepare( "SELECT * FROM $faqs_categories WHERE name = %s AND status = %s", $name, 1);
+		$QueryforData = $wpdb->prepare( "SELECT * FROM $faqs_categories WHERE cat_name = '%s' AND status = %s", $name, 1);
 		$Data = $wpdb->get_results($QueryforData);
 
 		return $Data;
